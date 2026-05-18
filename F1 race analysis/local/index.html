@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Data-driven Formula 1 race simulation using Monte Carlo methods and Log-Normal distributions with a full 20-driver 2024 grid.">
+  <title>F1 Race Simulation — Silverstone Grand Prix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- LEFT PANEL -->
+    <div id="panel">
+      <div class="panel-header">
+        <h1>F1 RACE SIMULATION</h1>
+        <div class="subtitle">SILVERSTONE CIRCUIT</div>
+        <div class="track-info">
+          <span>Length: 5.891 km</span> |
+          <span>Race Dist: 306.198 km</span> |
+          <span>Record: 1:27.369 (Hamilton, 2019)</span>
+        </div>
+        <span class="lap-counter" id="lap-counter">LAP 0 / 15</span>
+      </div>
+
+      <div id="standings-wrap">
+        <div class="section-title">Race Standings</div>
+        <div id="standings-list"></div>
+      </div>
+
+      <div id="stats-section">
+        <div class="section-title">Statistical Analysis</div>
+        <div id="stats-content"></div>
+      </div>
+
+      <div id="config-bar"></div>
+    </div>
+
+    <!-- TRACK CANVAS -->
+    <div id="track-area">
+      <canvas id="track-canvas"></canvas>
+
+      <!-- Start Overlay -->
+      <div id="start-overlay">
+        <div class="lights-row">
+          <div class="light"></div><div class="light"></div><div class="light"></div>
+          <div class="light"></div><div class="light"></div>
+        </div>
+        <div class="start-text" id="start-text">GET READY</div>
+      </div>
+
+      <!-- Finish Overlay -->
+      <div id="finish-overlay" class="hidden">
+        <h2>🏁 RACE FINISHED</h2>
+        <div class="winner-name" id="winner-name"></div>
+        <button id="replay-btn">REPLAY RACE</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

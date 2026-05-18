@@ -1,0 +1,552 @@
+{
+    "drivers": {
+        "Verstappen": {
+            "mu": 90.01432050377421,
+            "sigma": 1.0339893048700222,
+            "avg_position": 3.11,
+            "win_probability": 0.348,
+            "expected_race_time": 1352.589384679603,
+            "strategy": [
+                [
+                    0,
+                    "M"
+                ],
+                [
+                    8,
+                    "H"
+                ]
+            ]
+        },
+        "Perez": {
+            "mu": 90.45737008675488,
+            "sigma": 1.1688435534508703,
+            "avg_position": 9.338,
+            "win_probability": 0.034,
+            "expected_race_time": 1359.4515967132766,
+            "strategy": [
+                [
+                    0,
+                    "M"
+                ],
+                [
+                    8,
+                    "H"
+                ]
+            ]
+        },
+        "Hamilton": {
+            "mu": 90.3246337478617,
+            "sigma": 1.1380271029771247,
+            "avg_position": 9.28,
+            "win_probability": 0.02,
+            "expected_race_time": 1359.4718362203125,
+            "strategy": [
+                [
+                    0,
+                    "S"
+                ],
+                [
+                    5,
+                    "M"
+                ],
+                [
+                    11,
+                    "S"
+                ]
+            ]
+        },
+        "Russell": {
+            "mu": 90.40596930415579,
+            "sigma": 0.808808070916723,
+            "avg_position": 8.094,
+            "win_probability": 0.014,
+            "expected_race_time": 1358.5265786855944,
+            "strategy": [
+                [
+                    0,
+                    "M"
+                ],
+                [
+                    9,
+                    "H"
+                ]
+            ]
+        },
+        "Leclerc": {
+            "mu": 90.18803093755932,
+            "sigma": 0.8184775176098824,
+            "avg_position": 4.982,
+            "win_probability": 0.072,
+            "expected_race_time": 1355.5548120892768,
+            "strategy": [
+                [
+                    0,
+                    "S"
+                ],
+                [
+                    6,
+                    "M"
+                ]
+            ]
+        },
+        "Sainz": {
+            "mu": 90.33451844537252,
+            "sigma": 0.9309733282823835,
+            "avg_position": 7.162,
+            "win_probability": 0.032,
+            "expected_race_time": 1357.696146293147,
+            "strategy": [
+                [
+                    0,
+                    "M"
+                ],
+                [
+                    8,
+                    "H"
+                ]
+            ]
+        },
+        "Norris": {
+            "mu": 90.09937940127311,
+            "sigma": 1.2486052883267051,
+            "avg_position": 4.224,
+            "win_probability": 0.272,
+            "expected_race_time": 1353.7844003101122,
+            "strategy": [
+                [
+                    0,
+                    "S"
+                ],
+                [
+                    5,
+                    "H"
+                ]
+            ]
+        },
+        "Piastri": {
+            "mu": 90.23618912799111,
+            "sigma": 1.0966566981693595,
+            "avg_position": 5.496,
+            "win_probability": 0.134,
+            "expected_race_time": 1355.7508641478428,
+            "strategy": [
+                [
+                    0,
+                    "M"
+                ],
+                [
+                    7,
+                    "H"
+                ]
+            ]
+        },
+        "Alonso": {
+            "mu": 90.54206608569575,
+            "sigma": 1.093081169841633,
+            "avg_position": 7.828,
+            "win_probability": 0.042,
+            "expected_race_time": 1358.1719671430792,
+            "strategy": [
+                [
+                    0,
+                    "H"
+                ]
+            ]
+        },
+        "Stroll": {
+            "mu": 90.84920578829554,
+            "sigma": 1.2706224815200526,
+            "avg_position": 15.202,
+            "win_probability": 0.006,
+            "expected_race_time": 1365.3653224449176,
+            "strategy": [
+                [
+                    0,
+                    "M"
+                ],
+                [
+                    10,
+                    "H"
+                ]
+            ]
+        },
+        "Gasly": {
+            "mu": 90.53906038748505,
+            "sigma": 1.2426589536500923,
+            "avg_position": 12.892,
+            "win_probability": 0.0,
+            "expected_race_time": 1363.093627397866,
+            "strategy": [
+                [
+                    0,
+                    "S"
+                ],
+                [
+                    4,
+                    "M"
+                ],
+                [
+                    10,
+                    "S"
+                ]
+            ]
+        },
+        "Ocon": {
+            "mu": 90.65647195798446,
+            "sigma": 1.0188833275897708,
+            "avg_position": 12.338,
+            "win_probability": 0.004,
+            "expected_race_time": 1362.3075855871555,
+            "strategy": [
+                [
+                    0,
+                    "M"
+                ],
+                [
+                    8,
+                    "S"
+                ]
+            ]
+        },
+        "Tsunoda": {
+            "mu": 90.63146381883752,
+            "sigma": 0.8339791492231521,
+            "avg_position": 11.96,
+            "win_probability": 0.004,
+            "expected_race_time": 1361.8521964724548,
+            "strategy": [
+                [
+                    0,
+                    "S"
+                ],
+                [
+                    6,
+                    "H"
+                ]
+            ]
+        },
+        "Ricciardo": {
+            "mu": 90.70447461637055,
+            "sigma": 1.1760125352117234,
+            "avg_position": 12.732,
+            "win_probability": 0.004,
+            "expected_race_time": 1362.8285511330803,
+            "strategy": [
+                [
+                    0,
+                    "M"
+                ],
+                [
+                    9,
+                    "S"
+                ]
+            ]
+        },
+        "Hulkenberg": {
+            "mu": 90.70907579121064,
+            "sigma": 0.8743262201714065,
+            "avg_position": 10.258,
+            "win_probability": 0.004,
+            "expected_race_time": 1360.3914618940153,
+            "strategy": [
+                [
+                    0,
+                    "H"
+                ]
+            ]
+        },
+        "Magnussen": {
+            "mu": 90.71131062165573,
+            "sigma": 0.9432996052638621,
+            "avg_position": 13.428,
+            "win_probability": 0.0,
+            "expected_race_time": 1363.1552797256954,
+            "strategy": [
+                [
+                    0,
+                    "M"
+                ],
+                [
+                    7,
+                    "H"
+                ]
+            ]
+        },
+        "Albon": {
+            "mu": 90.79301047683391,
+            "sigma": 1.3569544222132974,
+            "avg_position": 14.244,
+            "win_probability": 0.006,
+            "expected_race_time": 1364.500421966232,
+            "strategy": [
+                [
+                    0,
+                    "S"
+                ],
+                [
+                    5,
+                    "M"
+                ]
+            ]
+        },
+        "Bottas": {
+            "mu": 90.90074147027595,
+            "sigma": 1.0066849079711495,
+            "avg_position": 15.988,
+            "win_probability": 0.0,
+            "expected_race_time": 1366.0097930551526,
+            "strategy": [
+                [
+                    0,
+                    "M"
+                ],
+                [
+                    10,
+                    "H"
+                ]
+            ]
+        },
+        "Zhou": {
+            "mu": 90.93608141657806,
+            "sigma": 1.1486586178158693,
+            "avg_position": 16.306,
+            "win_probability": 0.0,
+            "expected_race_time": 1366.4250747363446,
+            "strategy": [
+                [
+                    0,
+                    "M"
+                ],
+                [
+                    8,
+                    "H"
+                ]
+            ]
+        },
+        "Sargeant": {
+            "mu": 90.99828270472793,
+            "sigma": 1.1304218933505512,
+            "avg_position": 15.138,
+            "win_probability": 0.004,
+            "expected_race_time": 1365.2060187933796,
+            "strategy": [
+                [
+                    0,
+                    "H"
+                ]
+            ]
+        }
+    },
+    "stats": {
+        "elite_benchmark": 1355.0751215039963,
+        "driver_vs_field": {
+            "Verstappen": {
+                "t_stat": -13.121226534628741,
+                "p_value": 5.340171917172594e-34,
+                "significant": true,
+                "status": "Elite Benchmark"
+            },
+            "Perez": {
+                "t_stat": 20.211700821693732,
+                "p_value": 8.255814672984779e-67,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Hamilton": {
+                "t_stat": 22.104668729670003,
+                "p_value": 5.381591824720763e-76,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Russell": {
+                "t_stat": 23.49786950454139,
+                "p_value": 9.171792155457986e-83,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Leclerc": {
+                "t_stat": 3.4098423565294143,
+                "p_value": 0.0007026796330606225,
+                "significant": true,
+                "status": "Elite Benchmark"
+            },
+            "Sainz": {
+                "t_stat": 17.361406975549276,
+                "p_value": 3.645810217651636e-53,
+                "significant": true,
+                "status": "Elite Benchmark"
+            },
+            "Norris": {
+                "t_stat": -6.036559463443197,
+                "p_value": 3.074767259452119e-09,
+                "significant": true,
+                "status": "Elite Benchmark"
+            },
+            "Piastri": {
+                "t_stat": 3.502101050812081,
+                "p_value": 0.0005030561880242109,
+                "significant": true,
+                "status": "Elite Benchmark"
+            },
+            "Alonso": {
+                "t_stat": 17.005752051244254,
+                "p_value": 1.7171627054468668e-51,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Stroll": {
+                "t_stat": 46.89919696084855,
+                "p_value": 5.0877263092615694e-185,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Gasly": {
+                "t_stat": 35.511838085973,
+                "p_value": 1.0960220092812046e-138,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Ocon": {
+                "t_stat": 40.72806306101644,
+                "p_value": 8.934392865065498e-161,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Tsunoda": {
+                "t_stat": 49.827029239244,
+                "p_value": 7.734028710363647e-196,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Ricciardo": {
+                "t_stat": 36.57800264589762,
+                "p_value": 2.540755039641834e-143,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Hulkenberg": {
+                "t_stat": 36.679957488345664,
+                "p_value": 9.224755078782216e-144,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Magnussen": {
+                "t_stat": 51.35527790940192,
+                "p_value": 2.5574147542396746e-201,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Albon": {
+                "t_stat": 40.33592588975586,
+                "p_value": 3.6325743447503957e-159,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Bottas": {
+                "t_stat": 60.88493479331759,
+                "p_value": 3.9931857493967346e-233,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Zhou": {
+                "t_stat": 58.56989599718977,
+                "p_value": 9.393415437852979e-226,
+                "significant": true,
+                "status": "Slower than Elite"
+            },
+            "Sargeant": {
+                "t_stat": 49.80296143741912,
+                "p_value": 9.453982919040532e-196,
+                "significant": true,
+                "status": "Slower than Elite"
+            }
+        },
+        "head_to_head": [
+            {
+                "driver1": "Verstappen",
+                "driver2": "Perez",
+                "p_value": 1.5845448090408665e-99,
+                "winner": "Verstappen",
+                "loser": "Perez"
+            },
+            {
+                "driver1": "Hamilton",
+                "driver2": "Russell",
+                "p_value": 0.00014077208668921082,
+                "winner": "Russell",
+                "loser": "Hamilton"
+            },
+            {
+                "driver1": "Leclerc",
+                "driver2": "Sainz",
+                "p_value": 5.060829583681605e-24,
+                "winner": "Leclerc",
+                "loser": "Sainz"
+            },
+            {
+                "driver1": "Norris",
+                "driver2": "Piastri",
+                "p_value": 1.5039122538140285e-11,
+                "winner": "Norris",
+                "loser": "Piastri"
+            },
+            {
+                "driver1": "Alonso",
+                "driver2": "Stroll",
+                "p_value": 2.9009538266837413e-108,
+                "winner": "Alonso",
+                "loser": "Stroll"
+            },
+            {
+                "driver1": "Gasly",
+                "driver2": "Ocon",
+                "p_value": 0.00632936683461678,
+                "winner": "Ocon",
+                "loser": "Gasly"
+            },
+            {
+                "driver1": "Tsunoda",
+                "driver2": "Ricciardo",
+                "p_value": 0.00011405254350554969,
+                "winner": "Tsunoda",
+                "loser": "Ricciardo"
+            },
+            {
+                "driver1": "Hulkenberg",
+                "driver2": "Magnussen",
+                "p_value": 2.1023284256541825e-35,
+                "winner": "Hulkenberg",
+                "loser": "Magnussen"
+            },
+            {
+                "driver1": "Albon",
+                "driver2": "Sargeant",
+                "p_value": 0.022969638440467833,
+                "winner": "Albon",
+                "loser": "Sargeant"
+            },
+            {
+                "driver1": "Bottas",
+                "driver2": "Zhou",
+                "p_value": 0.11631945718623628,
+                "winner": "Tie",
+                "loser": "Tie"
+            }
+        ],
+        "chi_square": {
+            "target": "Sample Engine (VER)",
+            "chi_stat": 6.734124001821991,
+            "p_value": 0.6647786253236443,
+            "significant": false
+        },
+        "anova_strategy": {
+            "f_stat": 21.50429904525844,
+            "p_value": 4.795495335358035e-10,
+            "significant": true
+        }
+    },
+    "config": {
+        "num_laps": 15,
+        "sim_runs": 500
+    }
+}

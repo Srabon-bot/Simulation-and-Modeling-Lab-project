@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --bg: #0a0a12; --panel-bg: rgba(14,14,22,0.92); --card-bg: rgba(22,22,35,0.85);
+  --border: rgba(255,255,255,0.06); --accent: #e10600; --accent-glow: rgba(225,6,0,0.3);
+  --text: #f0f3f8; --text-dim: #6b7280; --text-mid: #9ca3af;
+  --green: #22c55e; --red: #ef4444; --yellow: #eab308; --blue: #3b82f6;
+  --redbull: #3671C6; --mercedes: #27F4D2; --ferrari: #E8002D; --mclaren: #FF8000;
+  --aston: #229971; --alpine: #FF87BC; --rb: #6692FF; --sauber: #52E252;
+  --haas: #B6BABD; --williams: #64C4FF;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); overflow:hidden; height:100vh; }
+
+#app { display:flex; height:100vh; }
+
+/* === LEFT PANEL === */
+#panel {
+  width:400px; min-width:400px; height:100vh; display:flex; flex-direction:column;
+  background:var(--panel-bg); backdrop-filter:blur(20px); border-right:1px solid var(--border);
+  z-index:10;
+}
+.panel-header {
+  padding:16px 20px 12px; border-bottom:1px solid var(--border);
+  background:linear-gradient(135deg, rgba(225,6,0,0.08), transparent);
+}
+.panel-header h1 {
+  font-size:18px; font-weight:800; letter-spacing:1.5px;
+  background:linear-gradient(135deg,#fff,#ccc); -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+}
+.panel-header h1 { margin: 0; font-size: 1.2rem; letter-spacing: 2px; }
+.subtitle { font-size: 0.8rem; color: rgba(255,255,255,0.5); letter-spacing: 1px; margin-top: 4px; text-transform: uppercase; }
+.track-info { font-size: 0.7rem; color: rgba(255,255,255,0.4); margin-top: 6px; }
+.track-info span { margin: 0 4px; }
+.lap-counter { position: absolute; top: 20px; right: 20px; background: #e10600; padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 0.9rem; }
+
+/* === STANDINGS === */
+#standings-wrap { flex:1; overflow-y:auto; padding:8px 12px; }
+#standings-wrap::-webkit-scrollbar { width:4px; }
+#standings-wrap::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.1); border-radius:2px; }
+
+.section-title {
+  font-size:10px; font-weight:700; letter-spacing:2px; color:var(--text-dim);
+  margin:8px 0 6px 4px; text-transform:uppercase;
+}
+.driver-row {
+  display:flex; align-items:center; gap:8px; padding:5px 8px; margin:2px 0;
+  border-radius:6px; transition:background 0.2s; position:relative; overflow:hidden;
+}
+.driver-row:hover { background:rgba(255,255,255,0.04); }
+.driver-row.pitting { animation:pitFlash 0.6s infinite alternate; }
+@keyframes pitFlash { from{background:rgba(234,179,8,0.08)} to{background:rgba(234,179,8,0.18)} }
+
+.pos { font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:700; width:22px; text-align:center; }
+.team-bar { width:3px; height:24px; border-radius:2px; flex-shrink:0; }
+.driver-info { flex:1; min-width:0; }
+.driver-abbr { font-size:13px; font-weight:700; letter-spacing:0.5px; }
+.driver-name { font-size:9px; color:var(--text-dim); text-transform:uppercase; letter-spacing:1px; }
+.tire-badge {
+  width:20px; height:20px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  font-size:8px; font-weight:800; color:#000; flex-shrink:0;
+}
+.tire-bar-wrap { width:50px; height:4px; background:rgba(255,255,255,0.08); border-radius:2px; flex-shrink:0; }
+.tire-bar { height:100%; border-radius:2px; transition:width 0.3s, background 0.3s; }
+.gap-text { font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--text-mid); width:58px; text-align:right; flex-shrink:0; }
+.pit-label { font-size:9px; font-weight:700; color:var(--yellow); }
+
+/* === STATS PANEL === */
+#stats-section { padding:8px 16px 12px; border-top:1px solid var(--border); max-height:280px; overflow-y:auto; }
+#stats-section::-webkit-scrollbar { width:3px; }
+#stats-section::-webkit-scrollbar-thumb { background:rgba(255,255,255,0.08); border-radius:2px; }
+.stat-card {
+  background:var(--card-bg); border:1px solid var(--border); border-radius:8px;
+  padding:8px 12px; margin:4px 0;
+}
+.stat-card h3 { font-size:10px; font-weight:700; letter-spacing:1.5px; color:var(--text-dim); margin-bottom:4px; }
+.stat-line { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--text-mid); margin:2px 0; }
+.stat-line .good { color:var(--green); } .stat-line .bad { color:var(--red); }
+
+/* === TRACK AREA === */
+#track-area { flex:1; position:relative; background:var(--bg); }
+canvas { display:block; width:100%; height:100%; }
+
+/* === OVERLAYS === */
+#start-overlay, #finish-overlay {
+  position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  background:rgba(0,0,0,0.85); z-index:20; transition:opacity 0.8s;
+}
+#start-overlay.hidden, #finish-overlay.hidden { opacity:0; pointer-events:none; }
+
+.lights-row { display:flex; gap:16px; margin-bottom:30px; }
+.light {
+  width:40px; height:40px; border-radius:50%; background:#222; border:2px solid #333;
+  transition:background 0.2s, box-shadow 0.2s;
+}
+.light.on { background:var(--accent); box-shadow:0 0 20px var(--accent-glow); }
+.light.green { background:var(--green); box-shadow:0 0 20px rgba(34,197,94,0.5); }
+.start-text { font-size:28px; font-weight:800; letter-spacing:4px; opacity:0; transition:opacity 0.5s; }
+.start-text.show { opacity:1; }
+
+#finish-overlay h2 { font-size:36px; font-weight:900; letter-spacing:3px; margin-bottom:8px; }
+#finish-overlay .winner-name { font-size:20px; color:var(--yellow); margin-bottom:20px; }
+#replay-btn {
+  padding:12px 32px; border:2px solid var(--accent); background:transparent; color:#fff;
+  font-size:14px; font-weight:700; letter-spacing:2px; border-radius:8px; cursor:pointer;
+  transition:all 0.3s;
+}
+#replay-btn:hover { background:var(--accent); transform:scale(1.05); }
+
+/* === CONFIG BAR === */
+#config-bar {
+  display:flex; gap:16px; padding:6px 16px; border-top:1px solid var(--border);
+  font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--text-dim);
+}
